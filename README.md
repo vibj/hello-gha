@@ -9,6 +9,6 @@ This is a reusable GitHub Action that prints "Hello, <name>!".
 ## Example Usage
 
 ```yaml
-- uses: <your-username>/hello-world-action@v1
+- uses: <your-username>/hello-gha@v1
   with:
     name: "GitHub"
