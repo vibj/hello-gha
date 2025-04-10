@@ -1,0 +1,12 @@
+name: "Hello World Action"
+description: "A reusable action that prints Hello, <name>!"
+inputs:
+  name:
+    description: "The name to greet"
+    required: true
+    default: "World"
+runs:
+  using: "composite"
+  steps:
+    - run: ./hello.sh ${{ inputs.name }}
+      shell: bash
